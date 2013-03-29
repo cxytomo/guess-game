@@ -4,17 +4,40 @@
 	<title>Guess The Letter From a to Z</title>
 	<style type="text/css">
 	html,body,div,canvas,p,span,ul,li {
-		display: block;
 		margin: 0;
 		padding: 0;
 	}
-	#game {
+	.guessLetter {
+		position: relative;
+		width: 500px;
 		margin: 50px auto 0 auto;
+	}
+	.guessLetter form {
+		position: absolute;
+		top: 300px;
+	}
+	.guessLetter form input {
+		position: absolute;
+	}
+	#creatImageData {
+		top: 20px;
+		left: 25px;
+	}
+	#tryAgain {
+		top: -37px;
+		right: -480px;
 	}
 	</style>
 </head>
 <body>
-	<canvas id="game"></canvas>
+	<div class="guessLetter">
+		<canvas id="game"></canvas>
+		<form>
+			<input type="button" id="tryAgain" value="try again" href="index.html">
+			<input type="button" id="creatImageData" value="Export Canvas Image">
+		</form>
+	</div>
+	
 <script type="text/javascript" src="modernizr.custom.33486.js"></script>
 <script type="text/javascript" src="game.js"></script>
 </body>
