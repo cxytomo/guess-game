@@ -72,7 +72,7 @@ function canvasApp() {
 					} 
 					if(guess == 0 && game == false) {
 						letterToGArray.push(letterToGuess);
-						LowerOrHigher = "You loose!";
+						LowerOrHigher = "game over!";
 					}
 				}
 			} else{
