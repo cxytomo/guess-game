@@ -7,13 +7,11 @@ Debugger.log = function(message){
 		return;
 	}
 };
-
 window.addEventListener('load',windowloaded,false);
 
 function windowloaded() {
 	canvasApp();
 }
-
 function canvasApp() {
 	var canv = document.getElementById('game')
 	,	contxt = canv.getContext('2d')
