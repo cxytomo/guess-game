@@ -7,7 +7,6 @@ Debugger.log = function(message){
 		return;
 	}
 };
-
 window.addEventListener('load',windowloaded,false);
 
 function windowloaded() {
